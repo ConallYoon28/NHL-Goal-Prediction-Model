@@ -14,15 +14,15 @@ from matplotlib import pyplot as plt
 
 
 #(csv 1)this dataset is the main one it provides data on shots and goals and what type of shot was used
-df_game_plays = pd.read_csv('data/game_plays.csv')
+df_game_plays = pd.read_csv('game_plays.csv')
 #(csv 2)this dataset has data on which players were involved in each play in the main dataset 
-df_game_plays_players = pd.read_csv('data/game_plays_players.csv')
+df_game_plays_players = pd.read_csv('game_plays_players.csv')
 #(csv 3)this dataset has stats on goalies
-df_game_goalie_stats = pd.read_csv('data/game_goalie_stats.csv')
+df_game_goalie_stats = pd.read_csv('game_goalie_stats.csv')
 #(csv 4)this dataset has stats on skaters
-df_game_skater_stats = pd.read_csv('data/game_skater_stats.csv')
+df_game_skater_stats = pd.read_csv('game_skater_stats.csv')
 #(csv 5)this dataset let me match player ids with player names 
-df_player_info = pd.read_csv('data/player_info.csv')
+df_player_info = pd.read_csv('player_info.csv')
 
 
 #organizes dataset so it only includes relivent columns 
@@ -187,7 +187,7 @@ while running == 0:
         new_cords_y.append(new_st_y)
 
     #displays an image of a hockey rink 
-    img = plt.imread('images/hockeyrink.jpg')
+    img = plt.imread('hockeyrink.jpg')
     fig, ax = plt.subplots()
     plt.title("Click where you want the shot to be taken from. \nWhen done close this window.")
     #sets the size and cords of the hockey rink to match the size and cords used in the dataframe
